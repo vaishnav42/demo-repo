@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaishnav Patil | DevOps Engineer</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        background: '#0a0a0a',
+                        card: '#0f172a', /* slate-900 */
+                        cardLight: '#1e293b', /* slate-800 */
+                        border: 'rgba(51, 65, 85, 0.5)', /* slate-700/50 */
+                        borderHover: '#0ea5e9', /* electric blue */
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #f8fafc; /* slate-50 */
+        }
+
+        /* Metallic Card Effect */
+        .metallic-card {
+            background: linear-gradient(145deg, #1e293b 0%, #0f172a 100%);
+            border: 1px solid rgba(51, 65, 85, 0.5);
+            transition: border-color 0.15s ease-out, box-shadow 0.15s ease-out;
+        }
+
+        .metallic-card:hover {
+            border-color: #0ea5e9;
+            box-shadow: 0 0 20px rgba(14, 165, 233, 0.15);
+        }
+
+        /* Text Gradient for Accents */
+        .text-gradient {
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(to right, #0ea5e9, #2dd4bf);
+        }
+        
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Premium Enhancements */
+        .bg-noise {
+            position: fixed;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 0.03;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+
+        .glow-orb {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(14,165,233,0.15) 0%, rgba(10,10,10,0) 70%);
+            border-radius: 50%;
+            filter: blur(60px);
+            z-index: -1;
+            pointer-events: none;
+        }
+        
+        .premium-btn {
+            background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 20px rgba(14, 165, 233, 0);
+            transition: all 0.2s ease;
+        }
+        .premium-btn:hover {
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 0 20px rgba(14, 165, 233, 0.3);
+            border-color: #0ea5e9;
+        }
+    </style>
+</head>
+<body class="selection:bg-cyan-900 selection:text-cyan-50 relative overflow-x-hidden">
+    <div class="bg-noise"></div>
+    <div class="glow-orb top-[-20%] left-[-10%]"></div>
+    <div class="glow-orb bottom-[10%] right-[-10%] opacity-50"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 backdrop-blur-md bg-[#0a0a0a]/80 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="font-extrabold tracking-tight text-xl text-slate-200">VP.</div>
+            <div class="flex space-x-8 text-sm font-semibold tracking-wide text-slate-400">
+                <a href="#about" class="hover:text-cyan-400 transition-colors uppercase">About</a>
+                <a href="#skills" class="hover:text-cyan-400 transition-colors uppercase">Technical Skills</a>
+                <a href="#building" class="hover:text-cyan-400 transition-colors uppercase">Building & Deployment</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors uppercase">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-6 lg:px-8 pt-32 pb-24 space-y-32">
+        
+        <!-- Hero Section -->
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <!-- Image Placeholder -->
+            <div class="aspect-[4/5] bg-slate-800 border border-slate-700/50 rounded-xl relative overflow-hidden group shadow-2xl">
+                <div class="absolute inset-0 bg-gradient-to-tr from-slate-900 to-slate-800"></div>
+                <!-- Placeholder Pattern -->
+                <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
+                
+                <div class="absolute inset-0 flex flex-col items-center justify-center text-slate-500">
+                    <svg class="w-16 h-16 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    <span class="text-sm font-semibold tracking-widest uppercase">Profile Image</span>
+                </div>
+            </div>
+
+            <!-- Text Content -->
+            <div class="space-y-8">
+                <div class="text-center lg:text-left space-y-4">
+                    <h2 class="text-cyan-400 font-semibold tracking-widest uppercase text-sm">DevOps Engineer</h2>
+                    <h1 class="text-6xl lg:text-7xl font-extrabold tracking-tight text-slate-100">
+                        Vaishnav Patil
+                    </h1>
+                    <p class="text-xl text-slate-400 leading-relaxed max-w-2xl mt-6">
+                        Aspiring DevOps Engineer experienced in building and containerizing full-stack MERN applications and automating end-to-end CI/CD pipelines.
+                    </p>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row items-center gap-4 pt-4 justify-center lg:justify-start relative z-10">
+                    <a href="mailto:vaishnavpatil478@gmail.com" class="px-8 py-4 bg-slate-100 text-slate-900 font-extrabold rounded-lg hover:bg-cyan-400 hover:text-slate-950 transition-all duration-300 w-full sm:w-auto text-center shadow-[0_0_15px_rgba(14,165,233,0.3)] hover:shadow-[0_0_25px_rgba(14,165,233,0.6)] hover:-translate-y-1">
+                        Contact Me
+                    </a>
+                    <a href="https://github.com/vaishnav42" target="_blank" class="px-8 py-4 metallic-card text-slate-300 font-bold rounded-lg w-full sm:w-auto text-center flex justify-center items-center gap-2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
+                        GitHub Profile
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills -->
+        <section id="skills" class="space-y-12">
+            <h2 class="text-5xl font-extrabold tracking-tight text-slate-100">Technical Skills</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Skill Card -->
+                <div class="metallic-card p-8 rounded-xl space-y-4">
+                    <h3 class="text-xl font-bold text-cyan-400">Programming Languages</h3>
+                    <ul class="space-y-2 text-slate-300">
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-slate-500 rounded-full"></div>Python</li>
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-slate-500 rounded-full"></div>MySQL</li>
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-slate-500 rounded-full"></div>JavaScript</li>
+                    </ul>
+                </div>
+                <!-- Skill Card -->
+                <div class="metallic-card p-8 rounded-xl space-y-4">
+                    <h3 class="text-xl font-bold text-cyan-400">DevOps & Tools</h3>
+                    <ul class="space-y-2 text-slate-300">
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-slate-500 rounded-full"></div>Docker & Compose</li>
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-slate-500 rounded-full"></div>Jenkins</li>
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-slate-500 rounded-full"></div>Kubernetes</li>
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-slate-500 rounded-full"></div>Git / GitHub</li>
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-slate-500 rounded-full"></div>CI/CD Pipelines</li>
+                    </ul>
+                </div>
+                <!-- Skill Card -->
+                <div class="metallic-card p-8 rounded-xl space-y-4">
+                    <h3 class="text-xl font-bold text-cyan-400">Infrastructure</h3>
+                    <ul class="space-y-2 text-slate-300">
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-slate-500 rounded-full"></div>Version Control</li>
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-slate-500 rounded-full"></div>Containerization</li>
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-slate-500 rounded-full"></div>Orchestration</li>
+                    </ul>
+                </div>
+                <!-- Skill Card -->
+                <div class="metallic-card p-8 rounded-xl space-y-4">
+                    <h3 class="text-xl font-bold text-cyan-400">Core Concepts</h3>
+                    <ul class="space-y-2 text-slate-300">
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-slate-500 rounded-full"></div>DSA</li>
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-slate-500 rounded-full"></div>MERN Stack</li>
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-slate-500 rounded-full"></div>Speech Recognition</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Building & Deployment Section (Projects) -->
+        <section id="building" class="space-y-12">
+            <h2 class="text-5xl font-extrabold tracking-tight text-slate-100">Building and Deployment</h2>
+            
+            <div class="space-y-8">
+                
+                <!-- Project 1 -->
+                <div class="metallic-card p-10 rounded-xl space-y-6 drop-shadow-xl">
+                    <div class="flex flex-col md:flex-row justify-between md:items-center gap-4 border-b border-slate-700/50 pb-6">
+                        <div>
+                            <h3 class="text-2xl font-bold text-slate-100">End-to-End MERN CI/CD Pipeline</h3>
+                            <p class="text-slate-400 mt-2 font-mono text-sm">Jenkins & Docker</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded-md text-xs font-semibold text-slate-300">React.js</span>
+                            <span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded-md text-xs font-semibold text-slate-300">Node.js</span>
+                            <span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded-md text-xs font-semibold text-slate-300">Docker</span>
+                            <span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded-md text-xs font-semibold text-slate-300">Jenkins</span>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 text-slate-300 list-none">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-cyan-400 mt-1 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                            Built and deployed a full-stack MERN application, integrating React.js, Node.js, Express.js, and MongoDB into a single cohesive service.
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-cyan-400 mt-1 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                            Containerized the frontend and backend independently with Docker and orchestrated multi-container startup using Docker Compose.
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-cyan-400 mt-1 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                            Designed and configured a Jenkins pipeline to automate build, test, and deployment stages end-to-end.
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-cyan-400 mt-1 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                            Automated Docker image builds, pushes to Docker Hub, container deployment, and post-deploy health checks.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="metallic-card p-10 rounded-xl space-y-6 drop-shadow-xl">
+                    <div class="flex flex-col md:flex-row justify-between md:items-center gap-4 border-b border-slate-700/50 pb-6">
+                        <div>
+                            <h3 class="text-2xl font-bold text-slate-100">Jarvis AI Voice Assistant</h3>
+                            <p class="text-slate-400 mt-2 font-mono text-sm">Python, SpeechRecognition, pyttsx3</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded-md text-xs font-semibold text-slate-300">Python</span>
+                            <span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded-md text-xs font-semibold text-slate-300">Automation</span>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 text-slate-300 list-none">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-cyan-400 mt-1 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                            Built a Python-based desktop voice assistant capable of understanding and responding to spoken commands.
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-cyan-400 mt-1 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                            Integrated the SpeechRecognition library to convert live audio input into actionable text commands.
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-cyan-400 mt-1 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                            Used pyttsx3 for offline text-to-speech, giving the assistant natural spoken responses.
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-cyan-400 mt-1 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                            Automated everyday desktop tasks through voice commands, reducing manual interaction.
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="space-y-12 pb-12">
+            <h2 class="text-5xl font-extrabold tracking-tight text-slate-100">Education</h2>
+            <div class="metallic-card p-10 rounded-xl flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+                <div>
+                    <h3 class="text-2xl font-bold text-slate-100">Uka Tarsadi University</h3>
+                    <p class="text-xl text-slate-400 mt-2">B.Tech in Computer Science and Engineering &mdash; 4th Year</p>
+                </div>
+                <div class="px-6 py-3 bg-slate-800/50 border border-slate-700/50 rounded-lg backdrop-blur-sm">
+                    <span class="text-slate-400 font-semibold uppercase text-sm tracking-wider block mb-1">CGPA</span>
+                    <span class="text-3xl font-extrabold text-cyan-400">7.38</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-slate-800 bg-[#070707] py-12 text-center text-slate-500">
+        <p class="font-medium tracking-wide">
+            Designed & Built by Vaishnav Patil &copy; 2026
+        </p>
+    </footer>
+
+</body>
+</html>
